@@ -5,6 +5,7 @@
 
 # production
 /dist
+/coverage
 
 yarn-debug.log*
 yarn-error.log*
