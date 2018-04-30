@@ -1,0 +1,363 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wallet Renders buttons when onClick is passed 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Wallet
+    loading={false}
+    onClick={[MockFunction]}
+    value={0}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        "£",
+        "0.00",
+        <UNDEFINED>
+          <button
+            onClick={[Function]}
+          >
+            +
+          </button>
+          <button
+            onClick={[Function]}
+          >
+            -
+          </button>
+        </UNDEFINED>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      "£",
+      "0.00",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <button
+              onClick={[Function]}
+            >
+              +
+            </button>,
+            <button
+              onClick={[Function]}
+            >
+              -
+            </button>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "inc-button",
+            "nodeType": "host",
+            "props": Object {
+              "children": "+",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "+",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": "dec-button",
+            "nodeType": "host",
+            "props": Object {
+              "children": "-",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "-",
+            "type": "button",
+          },
+        ],
+        "type": Symbol(react.fragment),
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          "£",
+          "0.00",
+          <UNDEFINED>
+            <button
+              onClick={[Function]}
+            >
+              +
+            </button>
+            <button
+              onClick={[Function]}
+            >
+              -
+            </button>
+          </UNDEFINED>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        "£",
+        "0.00",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <button
+                onClick={[Function]}
+              >
+                +
+              </button>,
+              <button
+                onClick={[Function]}
+              >
+                -
+              </button>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "inc-button",
+              "nodeType": "host",
+              "props": Object {
+                "children": "+",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "+",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": "dec-button",
+              "nodeType": "host",
+              "props": Object {
+                "children": "-",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "-",
+              "type": "button",
+            },
+          ],
+          "type": Symbol(react.fragment),
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Wallet Renders loading message when loading is true 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Wallet
+    loading={true}
+    onClick={undefined}
+    value={0}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Please wait",
+    },
+    "ref": null,
+    "rendered": "Please wait",
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Please wait",
+      },
+      "ref": null,
+      "rendered": "Please wait",
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Wallet Renders value when passed 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Wallet
+    loading={false}
+    onClick={undefined}
+    value={5}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        "£",
+        "5.00",
+        "",
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      "£",
+      "5.00",
+      "",
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          "£",
+          "5.00",
+          "",
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        "£",
+        "5.00",
+        "",
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Wallet Renders without crashing 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Wallet
+    loading={false}
+    onClick={undefined}
+    value={0}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        "£",
+        "0.00",
+        "",
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      "£",
+      "0.00",
+      "",
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          "£",
+          "0.00",
+          "",
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        "£",
+        "0.00",
+        "",
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

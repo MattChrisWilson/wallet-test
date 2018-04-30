@@ -14,8 +14,8 @@ const Wallet = (props: Props) => (props.loading) ?
     {
       props.onClick ? 
       <Fragment>
-        <button onClick={() => props.onClick({ value: props.value, action: 'inc' })}>+</button>
-        <button onClick={() => props.onClick({ value: props.value, action: 'dec' })}>-</button>
+        <button key={'inc-button'} onClick={() => props.onClick({ value: props.value, action: 'inc' })}>+</button>
+        <button key={'dec-button'} onClick={() => props.onClick({ value: props.value, action: 'dec' })}>-</button>
       </Fragment> :
       ''
     }
