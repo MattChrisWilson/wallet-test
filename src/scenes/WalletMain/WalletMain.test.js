@@ -1,7 +1,12 @@
+/**
+ * @jest-environment jsdom
+*/
+
 import React from 'react';
-import { configure, shallow } from 'enzyme';
+import { configure, shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import WalletMain from './WalletMain';
+import Wallet from '../../components/Wallet';
 
 configure({ adapter: new Adapter() });
 
@@ -41,4 +46,11 @@ describe('WalletMain', () => {
     const { comp } = setup({ value: -5, overdraft: true });
     expect(comp).toMatchSnapshot();
   });
+
+  // test('Renders buttons when onClick is passed', () => {
+  //   const setBalance = jest.fn();
+  //   const { props, comp } = setupM({ onClick: jest.fn(), setBalance });
+  //   const link = comp.find('button').at(0).simulate('click', { value: 4, action: 'inc' })
+  //   expect(setBalance).toBeCalled();
+  // });
 });

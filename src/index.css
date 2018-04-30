@@ -4,6 +4,19 @@ body {
 
 .warning { 
 	padding: 10px;
-    border: 2px solid red;
+    border: 2px solid #e83f10;
     margin: 5px 0;
+    width: 200px;
 }
+.noBorder {border:0;}
+.rounded {border-radius: 5px;}
+.button {
+	width: 25px;
+	height: 25px;
+	margin: 0 2px;
+}
+.blue {color: #2f93f7}
+.invert {color: #FFF;}
+.blue.invert {background-color: #2f93f7;}
+.warning.invert {background-color: #e83f10;}
+.smallFixed {width: 170px;display: inline-block;}

@@ -27,7 +27,7 @@ class WalletMain extends Component<Props> {
         value={this.props.value} 
         onClick={(o) => this.handleOnClick(o)}
       />
-      {this.props.overdraft ? <div className={'warning'}>You're in your overdraft</div> : ''}
+      {this.props.overdraft ? <div className={'warning invert rounded'}>You're in your overdraft</div> : ''}
     </Fragment>
   }
 }
