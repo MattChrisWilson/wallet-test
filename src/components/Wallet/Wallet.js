@@ -10,7 +10,7 @@ type Props = {
 const Wallet = (props: Props) => (props.loading) ? 
   <div>Please wait</div> : 
   <div>
-    &pound;{props.value.toFixed(2)}
+    &pound;{props.value.toFixed(2)} 
     {
       props.onClick ? 
       <Fragment>

@@ -6,6 +6,7 @@ const mapStateToProps = state => {
   return {
     loading: state.loading,
     value: state.balance,
+    overdraft: state.overdraft,
   }
 }
 

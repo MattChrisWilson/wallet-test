@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Wallet from '../../components/Wallet';
 import amendBalance from '../../core/AmendBalance';
 
@@ -7,17 +7,12 @@ import amendBalance from '../../core/AmendBalance';
 type Props = {
   loading: boolean,
   value: number,
+  overdraft: boolean,
   setBalance: (data: {newBalance: number, overdraft: boolean}) => void,
 };
 
 class WalletMain extends Component<Props> {
-  constructor(props) {
-    super(props)
-    // this.handleOnClick = this.handleOnClick.bind(this)
-  }
-
   handleOnClick = ({ value, action }) => {
-    console.log('arse', this.props)
     amendBalance(value, action)
     .then(
       msg => {this.props.setBalance(msg)},
@@ -26,17 +21,21 @@ class WalletMain extends Component<Props> {
   }
 
   render() {
-    return <Wallet 
-      loading={this.props.loading} 
-      value={this.props.value} 
-      onClick={(o) => this.handleOnClick(o)}
-    />
+    return <Fragment>
+      <Wallet 
+        loading={this.props.loading} 
+        value={this.props.value} 
+        onClick={(o) => this.handleOnClick(o)}
+      />
+      {this.props.overdraft ? <div className={'warning'}>You're in your overdraft</div> : ''}
+    </Fragment>
   }
 }
 
 WalletMain.defaultProps = {
   loading: false,
   value: 0,
+  overdraft: false,
 }
 
 export default WalletMain;

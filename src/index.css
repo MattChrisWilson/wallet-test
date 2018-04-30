@@ -1,0 +1,9 @@
+body {
+	font-family: helvetica, calibri, arial, sans-serif;
+}
+
+.warning { 
+	padding: 10px;
+    border: 2px solid red;
+    margin: 5px 0;
+}

@@ -10,9 +10,8 @@ const defaultState = {
 const walletReducer = (state = { ...defaultState }, action) => {
   switch(action.type) {
     case SET_WALLET:
-      return { ...state, loading: false, ...action.payload }
+      return { ...state, loading: false, ...action.payload, overdraft: action.payload.balance < 0 }
     case SET_BALANCE:
-      console.log(action.payload)
       return { ...state, balance: action.payload.newBalance, overdraft: action.payload.overdraft }
     default:
       return state;
