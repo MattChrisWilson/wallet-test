@@ -1,7 +1,7 @@
 import React from 'react';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import Wallet from './Wallet';
+import WalletMain from './WalletMain';
 
 configure({ adapter: new Adapter() });
 
@@ -9,18 +9,19 @@ const setup = (setupProps = {}) => {
 	const defaultProps = {
 		loading: false,
 		value: 0,
+    overdraft: false,
 	};
 
 	const props = { ...defaultProps, ...setupProps };
 
 	const comp = shallow(
-		<Wallet loading={props.loading} value={props.value} onClick={props.onClick} />
+		<WalletMain loading={props.loading} value={props.value} />
 	);
 
 	return { props, comp };
 }
 
-describe('Wallet', () => {
+describe('WalletMain', () => {
   test('Renders without crashing', () => {
     const { comp } = setup();
     expect(comp).toMatchSnapshot();
@@ -36,26 +37,8 @@ describe('Wallet', () => {
     expect(comp).toMatchSnapshot();
   });
 
-  test('Renders buttons when onClick is passed', () => {
-    const { comp } = setup({ onClick: jest.fn() });
+  test('Renders overdraft message when passed', () => {
+    const { comp } = setup({ value: -5, overdraft: true });
     expect(comp).toMatchSnapshot();
-  });
-
-  test('calls onClick() on click of inc', () => {
-    const { props, comp } = setup({ onClick: jest.fn() });
-
-    const link = comp.find('button').at(0);
-    link.simulate('click');
-
-    expect(props.onClick).toBeCalled();
-  });
-
-  test('calls onClick() on click of dec', () => {
-    const { props, comp } = setup({ onClick: jest.fn() });
-
-    const link = comp.find('button').at(1);
-    link.simulate('click');
-
-    expect(props.onClick).toBeCalled();
   });
 });
